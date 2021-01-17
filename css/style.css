@@ -337,7 +337,7 @@ a:focus {
 }
 
 .demo-2 .codrops-header__info::after {
-	content: '02';
+	content: 'WE';
 	color: #fff;
 }
 

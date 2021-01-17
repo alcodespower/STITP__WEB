@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>echarts中国地图数据</title>
+	<script src="js/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="js/echarts.min.js"></script>
+	<script type="text/javascript" src="js/china.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script>document.documentElement.className = 'js';</script>
+</head>
+
+<body class="demo-2">
+	<svg class="hidden">
+
+		<symbol id="icon-caret" viewBox="0 0 24 24">
+			<title>caret</title>
+			<polygon points="15.7,16.6 11.1,12 15.7,7.4 14.3,6 8.3,12 14.3,18" />
+		</symbol>
+
+	</svg>
+	<main class="view">
+		<div class="content">
+			<div class="deco">
+				<p class="deco__text">A War Without Smoke!</p>
+			</div>
+			<header class="codrops-header">
+
+				<p class="codrops-header__info">THIS IS THE WAY!<br />A<br />WAR<br />Without Smoke.</p>
+				<span class="codrops-header__deco">Come On!</span>
+				<h1 class="codrops-header__title">CHINA</h1>
+
+			</header>
+		</div>
+		<nav class="tabsnav tabsnav--vertical tabsnav--zeru">
+			<div class="tabsnav__item">
+				<div class="tabsnav__bar"></div>
+				<h3 class="tabsnav__title">Situation__IN__China</h3>
+			</div>
+			<div class="tabsnav__item">
+				<div class="tabsnav__bar"></div>
+				<h3 class="tabsnav__title">Part__2</h3>
+			</div>
+			<div class="tabsnav__item">
+				<div class="tabsnav__bar"></div>
+				<h3 class="tabsnav__title">Part__3</h3>
+			</div>
+		</nav>
+
+<!-- 数据表 -->
+
+		<div class="tabscontent">
+<!-- 第一部分 -->
+			<div class="tabscontent__item">
+				<div class="column" style="width: 80Vw;">
+					<div id="main" style="width: 100%;height: 80vh;opacity: 1; transform: translateY(0px);"></div>
+				</div>
+			</div>
+
+<!-- 第二部分 -->
+			<div class="tabscontent__item">
+				<div class="column" style="width: 80Vw;">
+					<div id="Part_2" style="width: 100%;height: 80vh;opacity: 0; transform: translateY(0px);"></div>
+				</div>
+			</div>
+<!-- 第三部分 -->
+			<div class="tabscontent__item">
+				<div class="column" style="width: 80Vw;">
+					<div id="main" style="width: 100%;height: 80vh;opacity: 0; transform: translateY(0px);"></div>
+				</div>
+			</div>
+
+			<button class="btn btn--back"><svg class="icon icon--caret">
+					<use xlink:href="#icon-caret"></use>
+				</svg></button>
+		</div>
+	</main>
+
+	<script src="js/anime.min.js"></script>
+	<script src="js/enquire.min.js"></script>
+	<script src="js/tabsnav.js"></script>
+	<script src="js/main.js"></script>
+</body>
+<script src="./js/Part_1.js"></script>
+<script src="./js/Part_2.js"></script>
+
+
+
+</html>
